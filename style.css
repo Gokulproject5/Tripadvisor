@@ -512,7 +512,7 @@ p {
 
       .advest {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         height: fit-content;
       }
 
@@ -525,6 +525,8 @@ p {
       }
 
       .exp-image {
+        width: 100%;
+        height: fit-content;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
@@ -616,7 +618,7 @@ p {
       }
     }
   }
-    @media  screen and (max-width: 480px) {
+    @media  screen and (max-width: 400px) {
       .search-bar {
         width: 90%;
       }
