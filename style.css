@@ -41,7 +41,7 @@ a {
   color: #295c3e;
   position: relative;
 }
-a::after {
+ a::after {
   content: "";
   position: absolute;
   bottom: -6px;
@@ -256,11 +256,16 @@ p {
   align-items: center;
 }
 .things_image{
-  width: 300px;
+  width: 250px;
   margin: 10px;
   position: relative;
+  top: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .things_image img{
+  width: 250px;
+  height: 250px;
   border-radius: 10px;
   
 }
@@ -338,7 +343,7 @@ p {
 .sponsored-card{
   display: flex;
   margin: 50px;
-  width: 100%;
+  width: 90%;
   justify-content: center;
   align-items: center;
 }
@@ -490,4 +495,151 @@ p {
       text-decoration: underline;
     }
 
+
+
+    /* media-querie */
+
+
+    @media screen and (max-width: 768px) {
+      .nav-1,
+      .nav-2 {
+        flex-direction: row;
+        justify-content: center;
+        font:2rem;
+        gap: 10px;
+        margin-left: 10px;
+      }
+
+      .advest {
+        flex-direction: column;
+        width: 90%;
+        height: fit-content;
+      }
+
+      .adv-des {
+        border-left: none;
+        border-top: 1px solid var(--text-color);
+        width: 80%;
+        height: fit-content;
+        margin-top: 20px;
+      }
+
+      .exp-image {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+       .exp-2_card{
+        width: 80%;
+        margin: 10px;
+
+       }
+      .exp-2_image {
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-grow:  1;
+        align-items: center;
+        
+      }
+      .ins-card {
+        height: fit-content;
+      }
+
+      .ins-images {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .things-card,
+      .recommended-card,
+      .iconic-card,
+      .sponsored-card {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+    }
+
+    @media screen and (max-width: 1200px) {
+     
+      .exp-2_card {
+        width: 40%;
+        margin: 10px;
+      } 
+      .advest {
+        height: fit-content;
+        flex-direction: column;
+        font-size: 1rem;
+
+        
+      }
+      .adv-image p {
+        left: 30px;
+        bottom: 40px;
+
+      }.adv-des {
+        border-left: none;
+        border-top: 1px solid var(--text-color);
+        width: 80%;
+        height: fit-content;
+        margin-top: 20px;
+      }
+      .exp-image {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 10px;
+        justify-content:flex-start; 
+  
+      }
+      .exp-image img {
+        width: 200px;
+        height: 200px;
+      }
+     
+      .exp-2_card ,.ins-image, .things_image, .recommended-image, .iconic-image {
+        width: 100%;
+        margin: 10px;
+        max-width: 300px;
+        box-sizing: border-box;
+        
+       
+      }
+      .exp-2_card,.ins-image, .things_image, .recommended-image, .iconic-image {
+        margin: 10px;
+       img{
+        width: 100%;
+        height:250px;
+        border-radius: 8px;
+        display: block;
+
+      }
+    }
+  }
+    @media  screen and (max-width: 480px) {
+      .search-bar {
+        width: 90%;
+      }
+
+      .advest img {
+        width: 100%;
+        height: auto;
+      }
+
+      .adv-des {
+        width: 100%;
+      }
+
+      .exp-image img,
+      .exp-2_image img,
+      .ins-image img,
+      .things_image img,
+      .recommended-image img,
+      .iconic-image img,
+      .sponsored-image img {
+        width: 100%;
+        height: auto;
+      }
+      
+    }
    
